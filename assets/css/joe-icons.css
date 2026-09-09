@@ -1,0 +1,100 @@
+/* ============================================================
+ * Joe3 for Typecho - 图标兼容层
+ * 原主题的 joe-font 图标字体未随开源仓库发布，此处使用内置于
+ * assets/lib/font-awesome 的 FontAwesome 字体提供同名字形。
+ * ============================================================ */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../lib/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../lib/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+        url('../lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+        url('../lib/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+        url('../lib/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+        url('../lib/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+.joe-font,
+.jiewen,
+.m-icon {
+    font-family: 'FontAwesome', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.joe-font:before,
+.jiewen:before,
+.m-icon:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+.joe-icon-application:before { content: '\f009'; }
+.joe-icon-arrow-down:before { content: '\f107'; }
+.joe-icon-arrow-downb:before { content: '\f0ab'; }
+.joe-icon-arrow-right:before { content: '\f105'; }
+.joe-icon-caidan:before { content: '\f0c9'; }
+.joe-icon-coffee:before { content: '\f0f4'; }
+.joe-icon-copy:before { content: '\f0c5'; }
+.joe-icon-danganguanli:before { content: '\f187'; }
+.joe-icon-dianji:before { content: '\f25a'; }
+.joe-icon-dianzan:before { content: '\f087'; }
+.joe-icon-dianzan-fill:before { content: '\f164'; }
+.joe-icon-eye:before { content: '\f06e'; }
+.joe-icon-feather:before { content: '\f040'; }
+.joe-icon-fenlei:before { content: '\f07b'; }
+.joe-icon-huifu:before { content: '\f112'; }
+.joe-icon-huo:before { content: '\f06d'; }
+.joe-icon-jiasu:before { content: '\f135'; }
+.joe-icon-like:before { content: '\f087'; }
+.joe-icon-like-fill:before { content: '\f164'; }
+.joe-icon-link:before { content: '\f0c1'; }
+.joe-icon-locker:before { content: '\f023'; }
+.joe-icon-message:before { content: '\f0e5'; }
+.joe-icon-monitor:before { content: '\f108'; }
+.joe-icon-more-right:before { content: '\f101'; }
+.joe-icon-mulu:before { content: '\f0ca'; }
+.joe-icon-next:before { content: '\f054'; }
+.joe-icon-picture:before { content: '\f03e'; }
+.joe-icon-prev:before { content: '\f053'; }
+.joe-icon-qrcode:before { content: '\f029'; }
+.joe-icon-remen:before { content: '\f06d'; }
+.joe-icon-riqi:before { content: '\f073'; }
+.joe-icon-rss-fill:before { content: '\f09e'; }
+.joe-icon-search:before { content: '\f002'; }
+.joe-icon-shalou:before { content: '\f252'; }
+.joe-icon-shang:before { content: '\f157'; }
+.joe-icon-share:before { content: '\f1e0'; }
+.joe-icon-shouye:before { content: '\f015'; }
+.joe-icon-tag:before { content: '\f02b'; }
+.joe-icon-timeline:before { content: '\f1da'; }
+.joe-icon-tupian:before { content: '\f03e'; }
+.joe-icon-xiangxia:before { content: '\f107'; }
+.joe-icon-yinfu:before { content: '\f001'; }
+.joe-icon-zhanghao:before { content: '\f007'; }
+.joe-icon-zhexiantu:before { content: '\f201'; }
+.joe-icon-zhifeiji:before { content: '\f1d8'; }
+.joe-icon-zuzhijiagou:before { content: '\f0e8'; }
+.joe-icon-palette:before { content: '\f1fc'; }
+
+/* 点赞激活态使用实心图标 */
+.joe_detail__agree .agree.active .icon-unlike,
+.post-operate-like.active .icon-unlike,
+.post-operate-like .nums.visible {
+    display: inline-block;
+}
+.joe_detail__agree .agree .icon-unlike,
+.post-operate-like .icon-unlike {
+    display: none;
+}
+.joe_detail__agree .agree.active .icon-like,
+.post-operate-like.active .icon-like {
+    display: none;
+}
+.joe_detail__agree .agree.active .icon-unlike,
+.post-operate-like.active .icon-unlike {
+    display: inline-block;
+}
